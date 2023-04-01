@@ -6,5 +6,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'my-store';
+  // para que un valor pueda ser renderizado debe ser publico y no es necesario especificarlo
+  name = 'Centinela';
+  age = 20;
+  img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ArKQ5AIUqacA-5ofQ5nfPevwR0RtI7PBtg&usqp=CAU';
+
+  btnDesable = true;
+  person = {
+    name: 'Centinela',
+    age: 44,
+    avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0xKoXUryp0JZ1Sxp-99eQiQcFrmA1M1qbQ&usqp=CAU'
+  }
+
+
+
+
+
+  toggleButton() {
+    this.btnDesable = !this.btnDesable;
+  }
+  increaseAge() {
+    this.person.age += 1;
+  }
+  dicreaseAge() {
+    this.person.age -= 1;
+  }
 }
