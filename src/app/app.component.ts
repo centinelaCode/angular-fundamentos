@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   // para que un valor pueda ser renderizado debe ser publico y no es necesario especificarlo
   name = 'Centinela';
-  age = 20;
+  age = 18;
   img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ArKQ5AIUqacA-5ofQ5nfPevwR0RtI7PBtg&usqp=CAU';
 
   btnDesable = true;
   person = {
     name: 'Centinela',
-    age: 44,
+    age: 18,
     avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0xKoXUryp0JZ1Sxp-99eQiQcFrmA1M1qbQ&usqp=CAU'
   }
 
