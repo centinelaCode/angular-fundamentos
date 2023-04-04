@@ -1,3 +1,20 @@
+<!-- 8- [ngSwitch] -->
+<hr/>
+<h1>=> [ngSwitch] <=</h1>
+<input type="text" required [(ngModel)]="person.name" />
+<div [ngSwitch]="person.name">
+  <p *ngSwitchCase="'nicolas'" >
+    La persona es Nicolas
+  </p>
+  <p *ngSwitchCase="'julian'" >
+    La persona es Julian
+  </p>
+  <p *ngSwitchCase="'camilo'" >
+    La persona es Camilo
+  </p>
+
+  <p *ngSwitchDefault>No hace match</p>
+</div>
 
 
 
