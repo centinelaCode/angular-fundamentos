@@ -1,3 +1,58 @@
+<!-- 10- NgClass & NgStyle -->
+<hr/>
+<h1>=> NgClass & NgStyle  <=</h1>
+<input type="text" required #nameInput5="ngModel" [(ngModel)]="person.name" />
+<hr class="line-error"
+  [ngClass]="{
+    'valid': nameInput5.valid,
+    'invalid': nameInput5.invalid
+  }"
+/>
+<p class="message-error" [class.invalid]="nameInput5.invalid">
+  El campo es requerido
+</p>
+
+<div class="styles">
+  <div>
+    <input type="number" required [(ngModel)]="box.width" />
+    <input type="number" required [(ngModel)]="box.height" />
+    <input type="color" required [(ngModel)]="box.background" />
+  </div>
+  <div>
+    <div [ngStyle]="{
+      'width.px': box.width,
+      'height.px': box.height,
+      'background-color': box.background,
+      'display': 'block'
+    }"></div>
+  </div>
+</div>
+
+
+
+<!-- 9- class & style (dynamic) -->
+<hr/>
+<h1>=> Class & style <=</h1>
+<input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name" />
+<!-- <input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name" class="message-error" [class.invalid]="nameInput3.invalid"/> -->
+<p class="message-error" [class.invalid]="nameInput3.invalid">
+  El campo es requerido
+</p>
+
+<label >Nombre</label>
+<input type="text" required #nameInput4="ngModel" [(ngModel)]="person.name" />
+<p [style.font-style]="nameInput4.invalid ? 'italic' : 'normal'">Texto texto texto</p>
+
+<div class="styles">
+  <div>
+    <input type="number" [(ngModel)]="widthImg" />
+  </div>
+  <div>
+    <img [style.width.px]="widthImg" [src]="person.avatar" alt="">
+  </div>
+</div>
+
+
 <!-- 8- [ngSwitch] -->
 <hr/>
 <h1>=> [ngSwitch] <=</h1>

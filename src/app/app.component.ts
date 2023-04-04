@@ -9,6 +9,7 @@ import { Product } from './product.model'
 })
 export class AppComponent {
   // para que un valor pueda ser renderizado debe ser publico y no es necesario especificarlo
+  widthImg = 50;
   name = 'Centinela';
   age = 18;
   img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ArKQ5AIUqacA-5ofQ5nfPevwR0RtI7PBtg&usqp=CAU';
@@ -21,6 +22,11 @@ export class AppComponent {
   }
   names: string[] = ['Nico', 'Juli', 'Santi'];
   newName = '';
+  box = {
+    width: 100,
+    height: 100,
+    background: 'red'
+  }
   products: Product[] = [
     {
       name: 'Silla',
