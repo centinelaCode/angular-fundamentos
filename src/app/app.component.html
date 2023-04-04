@@ -22,9 +22,9 @@
 <!-- 7- *ngFor (listar un array de objetos) -->
 <hr/>
 <h1>=> *ngFor (objetos) <=</h1>
-<div>
+<div class="products--grid">
   <div *ngFor="let product of products">
-    <img [src]="product.image" [alt]="product.name" width="120">
+    <img [src]="product.image" [alt]="product.name" >
     <h2>{{ product.price }}</h2>
     <p>{{ product.name }}</p>
   </div>

@@ -5,7 +5,7 @@ import { Product } from './product.model'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   // para que un valor pueda ser renderizado debe ser publico y no es necesario especificarlo
@@ -23,30 +23,35 @@ export class AppComponent {
   newName = '';
   products: Product[] = [
     {
-      name: 'Consola Nintendo',
+      name: 'Silla',
       price: 1200,
-      image: './assets/images/nintendo.jpg',
+      image: './assets/images/sillas.png',
       category: 'Consolas',
     },
     {
-      name: 'Consola Super Nintendo',
+      name: 'Cubre Bocas',
       price: 1500,
-      image: './assets/images/supernintendo.jpg'
+      image: './assets/images/cubre_bocas.png'
     },
     {
-      name: 'Consola Nintendo 64',
+      name: 'Pants Woman',
       price: 800,
-      image: './assets/images/nintendo64.jpg'
+      image: './assets/images/pants_woman.png'
     },
     {
-      name: 'Game Cube Nintendo',
+      name: 'Phones',
       price: 900,
-      image: './assets/images/gamecube.jpg'
+      image: './assets/images/phone.png'
     },
     {
-      name: 'Game Cube Nintendo',
+      name: 'Toys',
       price: 1100,
-      image: './assets/images/wii.jpg'
+      image: './assets/images/toys.png'
+    },
+    {
+      name: 'Box',
+      price: 1100,
+      image: './assets/images/box.png'
     },
   ]
 
