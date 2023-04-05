@@ -1,3 +1,32 @@
+<!-- 11- Fromulario de registro -->
+<hr/>
+<h1 class="title-1">Registro</h1>
+<form (ngSubmit)="onRegister()"  #myForm="ngForm">
+  <div class="input-group">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" required #nameValidate="ngModel" id="name" [(ngModel)]="register.name">
+    <p class="alert-error" [class.invalid-alert]="nameValidate.invalid">Name is required</p>
+  </div>
+
+  <div class="input-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" required #emailValidate="ngModel" id="email" [(ngModel)]="register.email">
+    <p class="alert-error" [class.invalid-alert]="emailValidate.invalid">Email is required</p>
+  </div>
+
+  <div class="input-group">
+    <label for="password">Password</label>
+    <input type="password" name="password" required #passwordValidate="ngModel" id="password" [(ngModel)]="register.password">
+    <p class="alert-error" [class.invalid-alert]="passwordValidate.invalid">Password is required</p>
+  </div>
+
+  <button [disabled]="myForm.invalid" type="submit" class="btn-register">Registrar</button>
+  <!-- <button type="button">Acción</button> -->
+
+</form>
+
+
+
 <!-- 10- NgClass & NgStyle -->
 <hr/>
 <h1>=> NgClass & NgStyle  <=</h1>
@@ -128,7 +157,7 @@
 
 
 
-<!-- 3- Property [ Binding ] -->
+<!-- 3- event) binding-->
 <hr/>
 <h1>=> (event) binding <=</h1>
 <button [disabled]="btnDesable" >Enviar</button>

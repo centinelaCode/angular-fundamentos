@@ -15,6 +15,11 @@ export class AppComponent {
   img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ArKQ5AIUqacA-5ofQ5nfPevwR0RtI7PBtg&usqp=CAU';
 
   btnDesable = true;
+  register = {
+    name: '',
+    email: '',
+    password: ''
+  }
   person = {
     name: 'Centinela',
     age: 18,
@@ -97,5 +102,9 @@ export class AppComponent {
 
   deleteName(index: number) {
     this.names.splice(index, 1);
+  }
+
+  onRegister() {
+    console.log(this.register);
   }
 }

@@ -77,3 +77,62 @@
   }
 
 }
+
+
+.title-1 {
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  // justify-content:center;
+  // align-items:center;
+  gap: 2rem;
+
+
+  .btn-register {
+    padding: .8rem;
+    border-radius: 5px;
+    // cursor: pointer;
+    // background-color: lightgreen;
+    // border: 3px solid seagreen ;
+    // color: white;
+    // font-size: 1.2rem;
+  }
+}
+
+.input-group {
+  .alert-error {
+    opacity: 0;
+  }
+
+
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  input {
+    padding: .5rem;
+    width: 96%;
+    border-radius: 5px;
+    border: none;
+    background-color: gainsboro;
+    outline: none;
+
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  .invalid-alert {
+    color: red;
+    opacity: .9;
+  }
+
+}
