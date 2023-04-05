@@ -43,3 +43,7 @@ Thumbs.db
 
 # image
 src/assets/images/*.*
+
+
+.firebaserc
+.firebase/
